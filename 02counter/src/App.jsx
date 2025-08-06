@@ -9,15 +9,21 @@ function App() {
   // let counter = 5
 
   const addValue = () => {
-    console.log("value added");
-    counter = counter + 1
-    setcounter(counter)
+    if (counter < 25) {
+      setcounter(counter +1)
+    } 
+    // console.log("value added");
+    // counter = counter + 1
+    // setcounter(counter)
   }
 
   const removeValue = () => {
-    console.log('value removed');
-    counter = counter - 1
-    setcounter(counter)
+    if (counter > 0){
+      setcounter(counter - 1)
+    }
+    // console.log('value removed');
+    // counter = counter - 1
+    // setcounter(counter)
   }
   
   return (
